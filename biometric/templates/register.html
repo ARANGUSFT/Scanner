@@ -45,6 +45,19 @@
 
     </form>
   </div>
+  
+  <script>
+    // Obtén referencia al botón y al input
+    const openCameraBtn = document.getElementById('open-camera-btn');
+    const facialInput = document.getElementById('id_facial');
+
+    // Agrega un evento clic al botón
+    openCameraBtn.addEventListener('click', () => {
+        // Abre la cámara al hacer clic en el botón
+        facialInput.click();
+    });
+</script>
+
 
 
 {% endblock %}
