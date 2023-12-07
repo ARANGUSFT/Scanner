@@ -7,8 +7,6 @@
     <!-- Style -->
     <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <link rel="stylesheet" href="{% static 'css/form.css' %}">
-    <!-- Js -->
-    <script src="{% static 'js/nav.js' %}"></script>
     <title>Scanner Biometric</title>
 </head>
 <body>
@@ -25,6 +23,9 @@
     <!-- view Content -->
     {% block content %}
     {% endblock %}
-    
+
+
+    <script src="{% static 'js/nav.js' %}"></script>
+    <script src="{% static 'js/cam.js' %}"></script>
 </body>
 </html>

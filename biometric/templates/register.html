@@ -14,7 +14,7 @@
           <div class="form-group">
             <input type="text" name="name" placeholder="Nombres">
           </div>
-
+          
           <div class="form-group">
               <input type="text" name="lastname" placeholder="Apellidos">
           </div>
@@ -26,16 +26,15 @@
           <div class="form-group">
               <input type="number" name="identificate" placeholder="Cedula">
           </div>
-          <!-- 
-          <div class="form-group">
-              <input type="file" name="facial">
-          </div> -->
 
-          <div class="form-group">
-            <input type="file" name="facial" id="id_facial" style="display: none;">
-            <button type="button" class="cam" id="open-camera-btn">Abrir Cámara</button>
-          </div>
-        
+
+          <video id="video" width="640" height="480" autoplay></video>
+          <button type="button" id="capture">Tomar Foto</button>
+          <canvas id="canvas" width="640" height="480"></canvas>
+          <img id="photo" alt="Tu foto aparecerá aquí">
+          <!-- Campo oculto para almacenar la captura de la cámara -->
+          <input type="hidden" name="facial" id="facialInput">
+          <button type="submit">Tomar foto</button>
 
           <!-- Button -->
           <div class="form-group">
@@ -46,18 +45,6 @@
     </form>
   </div>
   
-  <script>
-    // Obtén referencia al botón y al input
-    const openCameraBtn = document.getElementById('open-camera-btn');
-    const facialInput = document.getElementById('id_facial');
-
-    // Agrega un evento clic al botón
-    openCameraBtn.addEventListener('click', () => {
-        // Abre la cámara al hacer clic en el botón
-        facialInput.click();
-    });
-</script>
-
 
 
 {% endblock %}

@@ -3,7 +3,9 @@ from biometric.models import Person
 
 
 def list(request):
-    return render(request,'list.html')
+    user = Person.objects.all()
+    context = {'List':user}
+    return render(request,'list.html', context)
 
 
 def register(request):
