@@ -5,10 +5,15 @@ from django.conf import settings
 from . import views
 
 
+
+
 urlpatterns = [
     path('Listado', views.list, name="list"),
     path('Registro', views.register, name="register"),
-    path('Actualizar', views.update, name="update")
+    path('Actualizar', views.update, name="update"),
+
+
+
 ]
 
 #Permite renderizar las imagenes

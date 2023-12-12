@@ -14,7 +14,7 @@
           <div class="form-group">
             <input type="text" name="name" placeholder="Nombres">
           </div>
-          
+
           <div class="form-group">
               <input type="text" name="lastname" placeholder="Apellidos">
           </div>
@@ -27,14 +27,9 @@
               <input type="number" name="identificate" placeholder="Cedula">
           </div>
 
-
-          <video id="video" width="640" height="480" autoplay></video>
-          <button type="button" id="capture">Tomar Foto</button>
-          <canvas id="canvas" width="640" height="480"></canvas>
-          <img id="photo" alt="Tu foto aparecerá aquí">
-          <!-- Campo oculto para almacenar la captura de la cámara -->
-          <input type="hidden" name="facial" id="facialInput">
-          <button type="submit">Tomar foto</button>
+          <div class="form-group">
+              <input type="file" name="facial">
+          </div>
 
           <!-- Button -->
           <div class="form-group">

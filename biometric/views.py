@@ -2,6 +2,8 @@ from django.shortcuts import render,redirect
 from biometric.models import Person
 
 
+
+
 def list(request):
     user = Person.objects.all()
     context = {'List':user}
@@ -26,3 +28,5 @@ def register(request):
 
 def update(request):
     return render(request,'update.html')
+
+
